@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -123,7 +124,8 @@
 
 		@media(min-width: 990px) {
 			.margin-top-heading {
-				padding-top: 150px;
+				padding-top: 100px;
+				padding-bottom: 50px;
 			}
 
 			#onphone-cover {
@@ -353,22 +355,22 @@
 					<div class="col-10 col-lg-8">
 						<div class="row">
 							<div class="col-6 col-lg-4">
-								<img src="./resources/images/logo/bigb.jpg" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/bigb.jpg" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
-								<img src="./resources/images/logo/dmart.png" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/dmart.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4">
-								<img src="./resources/images/logo/swiggy.png" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/swiggy.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
-								<img src="./resources/images/logo/more.png" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/more.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4">
-								<img src="./resources/images/logo/zomato.png" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/zomato.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
-								<img src="./resources/images/logo/ghar.jpeg" style="width: 70%; margin: 10px">
+								<img src="./resources/images/logo/ghar.jpeg" style="width: 60%; margin: 10px">
 							</div>
 						</div>
 					</div>
@@ -406,14 +408,14 @@
 
 
 
-		<div class="section" style="background-color: #e4984d; padding-bottom: 250px;">
+		<div class="section" style="background-color: #e4984d;">
 			<div class="container-fluid fp-auto-height" id="contact-us">
 				<div class="margin-top-heading row" style="text-align: center; ">
 					<div class="col-12">
 						<h1>Contact Us</h1>
 					</div>
 				</div>
-				<div class="row form-padding">
+				<div class="row form-padding" style="padding-bottom: 150px;">
 					<div class="form-group col-12">
 						<label for="name">Name</label>
 						<input oninput="nameVerify(event)" type="text" class="form-control" id="name" aria-describedby="nameHelp"
@@ -440,21 +442,21 @@
 							id="comment" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
 					</div>
 					<div class="col-12" style="text-align: center; margin-top: 20px;">
-						<button id="submit" class="btn btn-primary" style="min-width: 40%;">Submit</button>
+						<button type="button" id="submit" class="btn btn-primary" style="min-width: 40%;">Submit</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="section" style="background-color: #db675a">
+		<div class="section" style="background-color: #db675a" >
 			<div class="container-fluid">
-				<div class="margin-top-heading form-padding row" style="text-align: center; ">
+				<div class="margin-top-heading row" style="text-align: center; ">
 					<div class="col-12">
 						<h1>Feedback</h1>
 					</div>
 				</div>
-				<div class="row" style="padding : 40px">
+				<div class="row form-padding" style="padding-bottom: 150px;">
 					<div class="form-group col-12 col-lg-6">
 						<label for="nameFB">Name</label>
 						<input oninput="nameVerify(event)" type="text" class="form-control" id="nameFB" aria-describedby="nameHelp"
@@ -481,14 +483,25 @@
 							id="commentFB" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
 					</div>
 					<div class="col-12" style="text-align: center; margin-top: 20px;">
-						<button id="submitFB" style="min-width: 40%" class="btn btn-primary">Submit</button>
+						<button type="button" id="submitFB" style="min-width: 40%" class="btn btn-primary">Submit</button>
 					</div>
 				</div>
 			</div>
 			<div class="container-fluid fp-auto-height">
-				<div class="row">
-					<div class="col-12" style="height: 200px; background-color: black;">
-
+				<div class="row" style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px;">
+					<div class="col-12 col-lg-6">
+						<p  style="color: black">Popular Bread and Food Products<br>
+							30, Industrial Estate, Kila Maidan<br>
+							Indore, M.P.</p>
+							<p  style="color: black">EMAIL HERE</p>
+						</div>
+						<div class="col-12 col-lg-6">
+						<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+						<a href="https://www.instagram.com/invites/contact/?i=jkriz7hop27x&utm_content=fo29xym"><img src="./resources/images/instagram.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+						<p style="padding-top: 20px; color: black">
+							ISO 9001:2015<br>
+							LIC NO: 11414850001880
+						</p>
 					</div>
 				</div>
 			</div>
@@ -639,7 +652,6 @@
 
 			window.onload = () => {
 				document.getElementById('submit').addEventListener('click', (e) => {
-					e.preventDefault();
 					let name = document.getElementById('name').value;
 					let email_id = document.getElementById('email').value;
 					let contact_number = document.getElementById('phone').value;
@@ -700,7 +712,6 @@
 				})
 
 				document.getElementById('submitFB').addEventListener('click', (e) => {
-					e.preventDefault();
 					let name = document.getElementById('nameFB').value;
 					let email = document.getElementById('emailFB').value;
 					let contact = document.getElementById('phoneFB').value;
