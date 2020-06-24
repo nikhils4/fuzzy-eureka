@@ -545,13 +545,13 @@
 				autoScrolling: true
 			});
 
-			// document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', () => {
-			// 	if (document.querySelectorAll('[aria-expanded]')[0].getAttribute('aria-expanded') === 'false') {
-			// 		document.getElementsByTagName('nav')[0].style.backgroundColor = 'white';
-			// 	} else {
-			// 		document.getElementsByTagName('nav')[0].style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-			// 	}
-			// })
+			document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', () => {
+				if (document.querySelectorAll('[aria-expanded]')[0].getAttribute('aria-expanded') === 'false') {
+					document.getElementsByTagName('nav')[0].style.backgroundColor = 'white';
+				} else {
+					document.getElementsByTagName('nav')[0].style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+				}
+			})
 
 			function emailVerify(event) {
 				let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
