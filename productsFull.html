@@ -9,9 +9,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="fullpage.css" />
 
-	<title>Document</title>
+	<!-- Animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<title>Products</title>
 	<style>
 		/* General */
 		* {
@@ -105,137 +107,152 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto" id="myMenu">
-				<li class="nav-item active">
+			<ul class="ml-auto nav nav-pills" role="tablist">
+				<li class="nav-item">
 					<a class="nav-link" href="bootstrap.html">Home</a>
 				</li>
-				<li data-menuanchor="bread" class="nav-item">
-					<a class="nav-link" href="#Bread-products-all">Bread</a>
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="pill" href="#bread" role="tab" id="pills-bread-tab"
+						aria-controls="pills-bread" aria-selected="true">Bread</a>
 				</li>
-				<li data-menuanchor="pav" class="nav-item">
-					<a class="nav-link" href="#Pav-products-all">Pav and Bun</a>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#pav" role="tab" id="pills-pav-tab"
+						aria-controls="pills-pav" aria-selected="false">Pav and Bun</a>
 				</li>
-				<li data-menuanchor="toast" class="nav-item">
-					<a class="nav-link" href="#Toast-products-all">Toast</a>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#toast" role="tab" id="pills-toast-tab"
+						aria-controls="pills-toast" aria-selected="false">Toast</a>
 				</li>
-				<li data-menuanchor="bakery" class="nav-item">
-					<a class="nav-link" href="#Bakery-products-all">Bakery Items</a>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#bakery" role="tab" id="pills-bakery-tab"
+						aria-controls="pills-bakery" aria-selected="false">Bakery Items</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: 120px;">
+		Launch demo modal
+	</button> -->
 
-	<div id="fullpage">
-		<div class="section " style="background-color: orange;">
-			<div class="container-fluid" id="bread">
-				<div class="row" style="margin-top: 120px; ">
-					<div class="col-12 text-center">
-						<h1 style="color: black;">Bread</h1>
-					</div>
+	<!-- Modal -->
+	<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Nutrition Value</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style="color: black;">&times;</span>
+					</button>
 				</div>
-				<!-- <div class="row" id="products-list" style="text-align: center;">
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="container-fluid tab-content" id="pills-tabContent" style="overflow-x: hidden;">
+		<div class="row tab-pane fade show active" style="margin-top: 100px; " id="bread" role="tabpanel"
+			aria-labelledby="pills-bread-tab">
+			<div class="col-12 text-center">
+				<h1 style="color: black;">Bread</h1>
+			</div>
+			<div class="row " id="bread-products">
+			</div>
+		</div>
+		<!-- <div class="row" id="products-list" style="text-align: center;">
             
                         <img src="./resources/images/loader.gif" id="loader" style="margin: auto auto; width: 350px;">
                     </div> -->
-				<div class="row" id="bread-products">
+										<button style="display: none;" id="launch-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+											Launch demo modal
+										</button>
+										
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header" style="text-align: center;">
+														<h5 class="modal-title" style="color: black" id="exampleModalLongTitle">Nutrition value</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<img src="" id="launch-modal-img" style="width: 100%">
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
 
-				</div>
+
+		<div class="row tab-pane fade" style="margin-top: 100px;" id="pav" role="tabpanel"
+			aria-labelledby="pills-pav-tab">
+			<div class="col-12 text-center">
+				<h1 style="color: black;">Pav</h1>
 			</div>
-		</div>
+			<div class="row" id="pav-products">
 
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-			Launch demo modal
-		</button>
-
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						...
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" style="background-color: yellow;">
-			<div class="container-fluid" id="pav">
-				<div class="row" style="margin-top: 100px;">
-					<div class="col-12 text-center">
-						<h1 style="color: black;">Pav</h1>
-					</div>
-				</div>
-				<div class="row" id="pav-products">
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section" style="background-color: green;">
-			<div class="container-fluid" id="toast">
-				<div class="row" style="margin-top: 100px; ">
-					<div class="col-12 text-center">
-						<h1 style="color: black;">Toast</h1>
-					</div>
-				</div>
-				<div class="row" id="toast-products">
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section" style="background-color: pink;">
-			<div class="container-fluid" id="bakery">
-				<div class="row" style="margin-top: 100px; ">
-					<div class="col-12 text-center">
-						<h1 style="color: black;">Bakery</h1>
-					</div>
-				</div>
-				<div class="row" id="bakery-products">
-
-				</div>
 			</div>
 		</div>
 
 
-		<!-- Footer -->
+		<div class="row tab-pane fade" style="margin-top: 100px; " id="toast" role="tabpanel"
+			aria-labelledby="pills-toast-tab">
+			<div class="col-12 text-center">
+				<h1 style="color: black;">Toast</h1>
+			</div>
+			<div class="row" id="toast-products">
 
-		<div class="container-fluid fp-auto-height" style="background-color: blue;">
-			<div class="row"
-				style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px; padding-bottom: 50px;">
-				<div class="col-12 col-lg-6">
-					<p style="color: black">Popular Bread and Food Products<br>
-						30, Industrial Estate, Kila Maidan<br>
-						Indore, M.P.</p>
-					<p style="color: black">EMAIL HERE</p>
-				</div>
-				<div class="col-12 col-lg-6">
-					<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg"
-							style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
-					<a href="https://www.instagram.com/invites/contact/?i=jkriz7hop27x&utm_content=fo29xym"><img
-							src="./resources/images/instagram.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
-					<p style="padding-top: 20px; color: black">
-						ISO 9001:2015<br>
-						LIC NO: 11414850001880
-					</p>
-				</div>
+			</div>
+		</div>
+
+
+		<div class="row tab-pane fade" style="margin-top: 100px; " id="bakery" role="tabpanel"
+			aria-labelledby="pills-bakery-tab">
+			<div class="col-12 text-center">
+				<h1 style="color: black;">Bakery</h1>
+			</div>
+			<div class="row" id="bakery-products">
+
 			</div>
 		</div>
 
 	</div>
 
+	<!-- Footer -->
+
+	<div class="container-fluid">
+		<div class="row"
+			style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px; padding-bottom: 50px;">
+			<div class="col-12 col-lg-6">
+				<p style="color: black">Popular Bread and Food Products<br>
+					30, Industrial Estate, Kila Maidan<br>
+					Indore, M.P.</p>
+				<p style="color: black">EMAIL HERE</p>
+			</div>
+			<div class="col-12 col-lg-6">
+				<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg"
+						style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+				<a href="https://www.instagram.com/invites/contact/?i=jkriz7hop27x&utm_content=fo29xym"><img
+						src="./resources/images/instagram.svg"
+						style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+				<p style="padding-top: 20px; color: black">
+					ISO 9001:2015<br>
+					LIC NO: 11414850001880
+				</p>
+			</div>
+		</div>
+	</div>
 
 	<script src="./resources/js/pace.js"></script>
 
@@ -249,43 +266,7 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
 
-
 	<script>
-		// commecnt krdo
-		// new fullpage('#fullpage', {
-		//     // anchors: ['bread', 'pav', 'toast', 'bakery'],
-		//     // menu: '#myMenu',
-		//     css3: true,
-		//     navigation: true,
-		//     navigationPosition: 'right',
-		//     verticalCentered: true,
-		//     scrollOverflow: true,
-		//     autoScrolling: true,
-		//     fitToSection: false,
-		//     showActiveTooltip: true,
-		//     verticalCentered: true,
-		//     scrollBar: false
-
-
-		// });
-
-
-
-		// new fullpage('#fullpage', {
-
-		// 	navigation: true,
-		// 	css3: true,
-		// 	scrollingSpeed: 1000,
-		// 	navigation: true,
-		// 	slidesNavigation: true,
-		// 	responsiveHeight: 330,
-		// 	navigationPosition: 'right',
-		// 	showActiveTooltip: true,
-		// 	verticalCentered: true,
-		// 	fitToSection: true,
-		// 	scrollOverflow: true,
-		// 	autoScrolling: true
-		// });
 
 		fetch("http://popularbreadapi.herokuapp.com/products?tag=bread", {
 			method: 'GET',
@@ -295,27 +276,24 @@
 		})
 			.then(response => response.json())
 			.then(res => {
-				console.log(res);
 				let content = "";
 				for (let i = 0; i < res.length; i++) {
-					let breadImg = res[i].image;
-					let breadDes = res[i].description;
-					let breadName = res[i].name;
-					let breadNVal = res[i].nvalue;
 
-					content = content + `<div class="col-12 col-lg-4" style="padding: 25px;">
+					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
                                                 <div class="card">
-                                                    <img src=${breadImg} class="card-img-top" alt="breads" style=" width:100%">
+                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
                                                     <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000">${breadName}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${breadDes}</p>
-                                                        <button data-src=${breadNVal} class='btn btn-primary'>Nutrition value</button>
+                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
+                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
+                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
                                                     </div>
                                                 </div>
 			                                </div>`
 				}
 
 				document.getElementById("bread-products").innerHTML = content;
+
+
 
 			})
 
@@ -329,21 +307,16 @@
 		})
 			.then(response => response.json())
 			.then(res => {
-				console.log(res);
 				let content = "";
 				for (let i = 0; i < res.length; i++) {
-					let pavImg = res[i].image;
-					let pavDes = res[i].description;
-					let pavName = res[i].name;
-					let pavNVal = res[i].nvalue;
 
-					content = content + `<div class="col-12 col-lg-4" style="padding: 25px;">
+					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
                                                 <div class="card">
-                                                    <img src=${pavImg} class="card-img-top" alt="breads" style=" width:100%">
+                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
                                                     <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000">${pavName}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${pavDes}</p>
-                                                        <button data-src=${pavNVal} class='btn btn-primary'>Nutrition value</button>
+                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
+                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
+                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
                                                     </div>
                                                 </div>
 			                                </div>`
@@ -363,21 +336,16 @@
 		})
 			.then(response => response.json())
 			.then(res => {
-				console.log(res);
 				let content = "";
 				for (let i = 0; i < res.length; i++) {
-					let toastImg = res[i].image;
-					let toastDes = res[i].description;
-					let toastName = res[i].name;
-					let toastNVal = res[i].nvalue;
 
-					content = content + `<div class="col-12 col-lg-4" style="padding: 25px;">
+					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
                                                 <div class="card">
-                                                    <img src=${toastImg} class="card-img-top" alt="breads" style=" width:100%">
+                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
                                                     <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000">${toastName}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${toastDes}</p>
-                                                        <button data-src=${toastNVal} class='btn btn-primary'>Nutrition value</button>
+                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
+                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
+                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
                                                     </div>
                                                 </div>
 			                                </div>`
@@ -397,21 +365,16 @@
 		})
 			.then(response => response.json())
 			.then(res => {
-				console.log(res);
 				let content = "";
 				for (let i = 0; i < res.length; i++) {
-					let bakeryImg = res[i].image;
-					let bakeryDes = res[i].description;
-					let bakeryName = res[i].name;
-					let bakeryNVal = res[i].nvalue;
 
-					content = content + `<div class="col-12 col-lg-4" style="padding: 25px;">
+					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
                                                 <div class="card">
-                                                    <img src=${bakeryImg} class="card-img-top" alt="breads" style=" width:100%">
+                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%;">
                                                     <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000">${bakeryName}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${bakeryDes}</p>
-                                                        <button data-src=${bakeryNVal} class='btn btn-primary'>Nutrition value</button>
+                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
+                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px;">${res[i].description}</p>
+                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
                                                     </div>
                                                 </div>
 			                                </div>`
@@ -421,46 +384,17 @@
 
 			})
 
-
-		function showModal(event) {
-			let conent = `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>`
-		}
+			function showModal(event){
+				document.getElementById('launch-modal-img').setAttribute('src', event.target.getAttribute('data-src'));
+				document.getElementById('launch-modal').click();
+			}
+</script>
 
 
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js" sync></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
-	<script>
 
-		var myFullpage = new fullpage('#fullpage', {
-			anchors: ['Bread-products-all', 'Pav-products-all', 'Toast-products-all', 'Bakery-products-all'],
-			licenseKey: '8MI@?ID!k1',
-			scrollOverflow: true
-		});</script>
 </body>
 
 </html>

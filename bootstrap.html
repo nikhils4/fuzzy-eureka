@@ -181,7 +181,7 @@
 				<a class="nav-link" href="#aboutus">About us</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="productNew.html">Products</a>
+				<a class="nav-link" href="productsFull.html">Products</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#csr">CSR</a>
@@ -191,6 +191,12 @@
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#factories">Our factories</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#feedback">Feedback</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contactus">Contact Us</a>
 			</li>
 		</ul>
 	</div>
@@ -240,8 +246,8 @@
 
 		</div>
 
-		<div class="section" style="background-color: #e4b251;">
-			<div id="aboutus" class="container-fluid">
+		<div data-anchor="aboutus" class="section" style="background-color: #e4b251;">
+			<div class="container-fluid">
 				<!-- Heading  -->
 				<div class="row margin-top-heading " style="text-align: center;">
 					<div class="col-12">
@@ -267,8 +273,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" style="background-color: #e4984d;">
-			<div id="csr" class="container-fluid">
+		<div data-anchor="csr" class="section" style="background-color: #e4984d;">
+			<div class="container-fluid">
 
 				<!-- Heading -->
 				<div class="row margin-top-heading " style="text-align: center;">
@@ -335,9 +341,9 @@
 
 
 
-		<div class="section" style="background-color: #b04e5d; ">
+		<div data-anchor="collaborators" class="section" style="background-color: #b04e5d; ">
 			<!-- Collaborators -->
-			<div id="collaborators" class="container-fluid">
+			<div class="container-fluid">
 				<!-- Heading  -->
 				<div class="margin-top-heading row" style="text-align: center;">
 					<div class="col-12">
@@ -378,8 +384,8 @@
 
 
 
-		<div class="section" style="background-color: #db675a">
-			<div id="factories" class="container-fluid">
+		<div data-anchor="factories" class="section" style="background-color: #db675a">
+			<div class="container-fluid">
 				<!-- Heading  -->
 				<div class="row margin-top-heading " style="text-align: center;">
 					<div class="col-12">
@@ -401,50 +407,7 @@
 		</div>
 
 
-
-
-		<div class="section" style="background-color: #e4984d;">
-			<div class="container-fluid fp-auto-height" id="contact-us">
-				<div class="margin-top-heading row" style="text-align: center; ">
-					<div class="col-12">
-						<h1>Contact Us</h1>
-					</div>
-				</div>
-				<div class="row form-padding" style="padding-bottom: 150px;">
-					<div class="form-group col-12">
-						<label for="name">Name</label>
-						<input oninput="nameVerify(event)" type="text" class="form-control" id="name" aria-describedby="nameHelp"
-							placeholder="Enter name">
-					</div>
-					<div class="form-group col-12">
-						<label for="email">Email address</label>
-						<input oninput="emailVerify(event)" type="email" class="form-control" id="email"
-							aria-describedby="emailHelp" placeholder="Enter email">
-					</div>
-					<div class="form-group col-12">
-						<label for="phone">Contact number</label>
-						<input oninput="phoneVerify(event)" type="text" class="form-control" id="phone" aria-describedby="phoneHelp"
-							placeholder="Enter contact number">
-					</div>
-					<div class="form-group col-12">
-						<label for="location">Location</label>
-						<input oninput="verify(event)" type="text" class="form-control" id="location"
-							aria-describedby="locationHelp" placeholder="Enter location">
-					</div>
-					<div class="form-group col-12">
-						<label for="comment">Comment</label>
-						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text" class="form-control"
-							id="comment" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
-					</div>
-					<div class="col-12" style="text-align: center; margin-top: 20px;">
-						<button type="button" id="submit" class="btn btn-primary" style="min-width: 40%;">Submit</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="section" style="background-color: #db675a" >
+		<div data-anchor="feedback" class="section" style="background-color: #e4984d;" >
 			<div class="container-fluid">
 				<div class="margin-top-heading row" style="text-align: center; ">
 					<div class="col-12">
@@ -482,13 +445,55 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+
+
+		<div data-anchor="contactus" class="section" style="background-color: #db675a">
+			<div class="container-fluid">
+				<div class="margin-top-heading row" style="text-align: center; ">
+					<div class="col-12">
+						<h1>Contact Us</h1>
+					</div>
+				</div>
+				<div class="row form-padding" style="padding-bottom: 150px;">
+					<div class="form-group col-12">
+						<label for="name">Name</label>
+						<input oninput="nameVerify(event)" type="text" class="form-control" id="name" aria-describedby="nameHelp"
+							placeholder="Enter name">
+					</div>
+					<div class="form-group col-12">
+						<label for="email">Email address</label>
+						<input oninput="emailVerify(event)" type="email" class="form-control" id="email"
+							aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<div class="form-group col-12">
+						<label for="phone">Contact number</label>
+						<input oninput="phoneVerify(event)" type="text" class="form-control" id="phone" aria-describedby="phoneHelp"
+							placeholder="Enter contact number">
+					</div>
+					<div class="form-group col-12">
+						<label for="location">Location</label>
+						<input oninput="verify(event)" type="text" class="form-control" id="location"
+							aria-describedby="locationHelp" placeholder="Enter location">
+					</div>
+					<div class="form-group col-12">
+						<label for="comment">Comment</label>
+						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text" class="form-control"
+							id="comment" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
+					</div>
+					<div class="col-12" style="text-align: center; margin-top: 20px;">
+						<button type="button" id="submit" class="btn btn-primary" style="min-width: 40%;">Submit</button>
+					</div>
+				</div>
+			</div>
 			<div class="container-fluid fp-auto-height">
 				<div class="row" style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px;">
 					<div class="col-12 col-lg-6">
 						<p  style="color: black">Popular Bread and Food Products<br>
 							30, Industrial Estate, Kila Maidan<br>
 							Indore, M.P.</p>
-							<p  style="color: black">EMAIL HERE</p>
+							<p  style="color: black">info@popularbreadindore.com</p>
 						</div>
 						<div class="col-12 col-lg-6">
 						<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
@@ -527,12 +532,12 @@
 				licenseKey: '8MI@?ID!k1',
 				navigation: true,
 				css3: true,
+				anchors: ["aboutus", "csr", "collaborators", "factories", "feedback", "contactus"],
 				scrollingSpeed: 1000,
 				navigation: true,
 				slidesNavigation: true,
 				responsiveHeight: 330,
 				navigationPosition: 'right',
-				navigationTooltips: ['firstSlide', 'secondSlide', 'X', 'S', 'Sg'],
 				showActiveTooltip: true,
 				verticalCentered: true,
 				fitToSection: true,
