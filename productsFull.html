@@ -13,7 +13,7 @@
 	<!-- Animation -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<title>Document</title>
+	<title>Products</title>
 	<style>
 		/* General */
 		* {
@@ -131,6 +131,31 @@
 		</div>
 	</nav>
 
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: 120px;">
+		Launch demo modal
+	</button> -->
+
+	<!-- Modal -->
+	<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Nutrition Value</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style="color: black;">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 	<div class="container-fluid tab-content" id="pills-tabContent" style="overflow-x: hidden;">
 		<div class="row tab-pane fade show active" style="margin-top: 100px; " id="bread" role="tabpanel"
@@ -182,33 +207,6 @@
 		</div>
 
 	</div>
-
-	<!-- Button trigger modal -->
-	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-		Launch demo modal
-	</button> -->
-
-	<!-- Modal -->
-	<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
-				</div>
-			</div>
-		</div>
-	</div> -->
 
 	<!-- Footer -->
 
@@ -363,7 +361,7 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
                                                         <p class="card-text" style="color: black; font-size: 17px; min-height:130px;">${res[i].description}</p>
-                                                        <button data-src=${res[i].nvalue} class='btn btn-primary'>Nutrition value</button>
+                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
                                                     </div>
                                                 </div>
 			                                </div>`
@@ -375,6 +373,7 @@
 
 
 		function showModal(event) {
+			
 			let conent = `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
 							Launch demo modal
 							</button>
@@ -390,11 +389,10 @@
 									</button>
 								</div>
 								<div class="modal-body">
-									...
+									
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 								</div>
 							</div>
