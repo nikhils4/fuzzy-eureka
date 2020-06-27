@@ -1,5 +1,5 @@
 
-fetch("http://popularbreadapi.herokuapp.com/products?tag=bread", {
+fetch("https://popularbreadapi.herokuapp.com/products?tag=bread", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json;charset=utf-8'
@@ -30,7 +30,7 @@ fetch("http://popularbreadapi.herokuapp.com/products?tag=bread", {
 
 // Pav
 
-fetch("http://popularbreadapi.herokuapp.com/products?tag=pav", {
+fetch("https://popularbreadapi.herokuapp.com/products?tag=pav", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json;charset=utf-8'
@@ -59,7 +59,7 @@ fetch("http://popularbreadapi.herokuapp.com/products?tag=pav", {
 
 // Toast
 
-fetch("http://popularbreadapi.herokuapp.com/products?tag=toast", {
+fetch("https://popularbreadapi.herokuapp.com/products?tag=toast", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json;charset=utf-8'
@@ -88,7 +88,7 @@ fetch("http://popularbreadapi.herokuapp.com/products?tag=toast", {
 
 // Bakery
 
-fetch("http://popularbreadapi.herokuapp.com/products?tag=bakery", {
+fetch("https://popularbreadapi.herokuapp.com/products?tag=bakery", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json;charset=utf-8'
