@@ -6,7 +6,7 @@ new fullpage('#fullpage', {
     licenseKey: '8MI@?ID!k1',
     navigation: true,
     css3: true,
-    anchors: ["aboutus", "csr", "collaborators", "factories", "feedback", "contactus"],
+    anchors: ["aboutus", '', "csr", "collaborators", "factories", "feedback", "contactus"],
     scrollingSpeed: 1000,
     navigation: true,
     slidesNavigation: true,
