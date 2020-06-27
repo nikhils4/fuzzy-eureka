@@ -10,197 +10,48 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./resources/css/index.css" />
 
-	<title>Document</title>
-	<style>
-		/* General */
+	<title>Popular Breads | Home</title>
 
-		* {
-			font-family: 'Open Sans', sans-serif;
-			scroll-behavior: smooth;
-			color: white
-		}
-
-		h1 {
-			font-family: 'Cinzel', serif;
-			font-weight: 1000;
-		}
-
-
-
-		p {
-			font-size: 1.15em;
-		}
-
-		.nav-item {
-			padding-left: 15px;
-			padding-right: 15px
-		}
-
-		.ml-auto:last-child {
-			margin-right: 50px;
-		}
-
-		.navbar-light .navbar-toggler {
-			color: black;
-			border: none;
-		}
-
-		.navbar-light .navbar-toggler:focus {
-			outline: none;
-			border: none;
-		}
-
-		.image-small {
-			display: inline-block;
-			margin-left: 20px;
-			margin-right: 20px
-		}
-
-		.image-small>img {
-			height: 200px;
-
-		}
-
-		/* Pace loader at top */
-
-		.pace {
-			-webkit-pointer-events: none;
-			pointer-events: none;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			user-select: none;
-		}
-
-		.pace-inactive {
-			display: none;
-		}
-
-		.pace .pace-progress {
-			background: #000;
-			position: fixed;
-			z-index: 2000;
-			top: 0;
-			right: 100%;
-			width: 100%;
-			height: 2px;
-		}
-
-		.input-element {
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		label {
-			font-size: 17px;
-		}
-
-		label::after {
-			content: '*';
-		}
-
-		@media(max-width: 990px) {
-			.margin-top-heading {
-				padding-top: 100px;
-			}
-
-			#onphone-cover {
-				display: block;
-			}
-
-			.form-padding {
-				padding-left: 5%;
-				padding-right: 5%
-			}
-
-			#fullpage::first-child {
-				padding-bottom: 150px;
-			}
-
-			#csr {
-				padding-bottom: 200px
-			}
-		}
-
-		@media(min-width: 990px) {
-			.margin-top-heading {
-				padding-top: 100px;
-				padding-bottom: 50px;
-			}
-
-			#onphone-cover {
-				display: none;
-			}
-
-			.form-padding {
-				padding-left: 20%;
-				padding-right: 20%
-			}
-		}
-
-
-
-		/* .carousel-inner>.active { width: 100% } */
-		#onphone {
-			padding: 25px;
-			padding-top: 45px;
-			font-family: 'Great Vibes', cursive;
-			text-align: center;
-			font-size: 35px;
-			color: black;
-		}
-
-
-		html {
-			overflow: scroll;
-			overflow-x: hidden;
-		}
-
-		::-webkit-scrollbar {
-			width: 0px;
-			/* Remove scrollbar space */
-			background: transparent;
-			/* Optional: just make scrollbar invisible */
-		}
-	</style>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-	style=" background-color: rgba(255, 255, 255, 0.45); backdrop-filter: blur(5px);">
-	<a class="navbar-brand" href="index.html"><img src="./resources/images/logo.png" style="height: 40px;"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+		style=" background-color: rgba(255, 255, 255, 0.45); backdrop-filter: blur(5px);">
+		<a class="navbar-brand" href="index.html"><img src="./resources/images/logo.png" style="height: 40px;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#aboutus">About us</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="productsFull.html">Products</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#csr">CSR</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#collaborators">Collaborators</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#factories">Our factories</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#feedback">Feedback</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contactus">Contact Us</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#aboutus">About us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="productsFull.html">Products</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#csr">CSR</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#collaborators">Collaborators</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#factories">Our factories</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#feedback">Feedback</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contactus">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<div id="fullpage">
 		<div class="section fp-auto-height-responsive">
 			<!-- <a href="#contact-us">Go there</a> -->
@@ -265,8 +116,10 @@
 					<div class="col-10 col-lg-4">
 						<p style="text-align: justify;
 						text-align-last: left;">Since we opened our doors in 1967, we have been dedicated to the principle of maximising
-							quality while keeping customer satisfaction our topmost priority. The first fully automatic plant of
-							Madhya Pradesh, Popular Bread and Food Products, offer wide range of breads made entirely from scratch
+							quality while keeping customer satisfaction our topmost priority. The first fully automatic
+							plant of
+							Madhya Pradesh, Popular Bread and Food Products, offer wide range of breads made entirely
+							from scratch
 							using finest ingredients.</p>
 					</div>
 					<div class="col-1 col-lg-2"></div>
@@ -288,9 +141,11 @@
 					<div class="col-10 col-lg-8">
 						<p style="text-align: justify;
 							text-align-last: center;">Since we opened our doors in 1967, we have been dedicated to the principle of
-							maximising quality while keeping customer satisfaction our topmost priority. The first fully automatic
+							maximising quality while keeping customer satisfaction our topmost priority. The first fully
+							automatic
 							plant
-							of Madhya Pradesh, Popular Bread and Food Products, offer wide range of breads made entirely from scratch
+							of Madhya Pradesh, Popular Bread and Food Products, offer wide range of breads made entirely
+							from scratch
 							using finest ingredients.</p>
 					</div>
 					<div class="col-1 col-lg-2"></div>
@@ -358,19 +213,22 @@
 							<div class="col-6 col-lg-4">
 								<img src="./resources/images/logo/bigb.jpg" style="width: 60%; margin: 10px">
 							</div>
-							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
+							<div class="col-6 col-lg-4"
+								style="display: flex; flex-direction: column; justify-content:center">
 								<img src="./resources/images/logo/dmart.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4">
 								<img src="./resources/images/logo/swiggy.png" style="width: 60%; margin: 10px">
 							</div>
-							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
+							<div class="col-6 col-lg-4"
+								style="display: flex; flex-direction: column; justify-content:center">
 								<img src="./resources/images/logo/more.png" style="width: 60%; margin: 10px">
 							</div>
 							<div class="col-6 col-lg-4">
 								<img src="./resources/images/logo/zomato.png" style="width: 60%; margin: 10px">
 							</div>
-							<div class="col-6 col-lg-4" style="display: flex; flex-direction: column; justify-content:center">
+							<div class="col-6 col-lg-4"
+								style="display: flex; flex-direction: column; justify-content:center">
 								<img src="./resources/images/logo/ghar.jpeg" style="width: 60%; margin: 10px">
 							</div>
 						</div>
@@ -379,10 +237,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 
 		<div data-anchor="factories" class="section" style="background-color: #db675a">
 			<div class="container-fluid">
@@ -406,8 +260,7 @@
 			</div>
 		</div>
 
-
-		<div data-anchor="feedback" class="section" style="background-color: #e4984d;" >
+		<div data-anchor="feedback" class="section" style="background-color: #e4984d;">
 			<div class="container-fluid">
 				<div class="margin-top-heading row" style="text-align: center; ">
 					<div class="col-12">
@@ -417,8 +270,8 @@
 				<div class="row form-padding" style="padding-bottom: 150px;">
 					<div class="form-group col-12 col-lg-6">
 						<label for="nameFB">Name</label>
-						<input oninput="nameVerify(event)" type="text" class="form-control" id="nameFB" aria-describedby="nameHelp"
-							placeholder="Enter name">
+						<input oninput="nameVerify(event)" type="text" class="form-control" id="nameFB"
+							aria-describedby="nameHelp" placeholder="Enter name">
 					</div>
 					<div class="form-group col-12 col-lg-6">
 						<label for="emailFB">Email address</label>
@@ -437,17 +290,17 @@
 					</div>
 					<div class="form-group col-12 ">
 						<label for="commentFB">Description</label>
-						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text" class="form-control"
-							id="commentFB" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
+						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text"
+							class="form-control" id="commentFB" aria-describedby="commentHelp"
+							placeholder="Enter comments"></textarea>
 					</div>
 					<div class="col-12" style="text-align: center; margin-top: 20px;">
-						<button type="button" id="submitFB" style="min-width: 40%" class="btn btn-primary">Submit</button>
+						<button type="button" id="submitFB" style="min-width: 40%"
+							class="btn btn-primary">Submit</button>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 
 		<div data-anchor="contactus" class="section" style="background-color: #db675a">
 			<div class="container-fluid">
@@ -459,8 +312,8 @@
 				<div class="row form-padding" style="padding-bottom: 150px;">
 					<div class="form-group col-12">
 						<label for="name">Name</label>
-						<input oninput="nameVerify(event)" type="text" class="form-control" id="name" aria-describedby="nameHelp"
-							placeholder="Enter name">
+						<input oninput="nameVerify(event)" type="text" class="form-control" id="name"
+							aria-describedby="nameHelp" placeholder="Enter name">
 					</div>
 					<div class="form-group col-12">
 						<label for="email">Email address</label>
@@ -469,8 +322,8 @@
 					</div>
 					<div class="form-group col-12">
 						<label for="phone">Contact number</label>
-						<input oninput="phoneVerify(event)" type="text" class="form-control" id="phone" aria-describedby="phoneHelp"
-							placeholder="Enter contact number">
+						<input oninput="phoneVerify(event)" type="text" class="form-control" id="phone"
+							aria-describedby="phoneHelp" placeholder="Enter contact number">
 					</div>
 					<div class="form-group col-12">
 						<label for="location">Location</label>
@@ -479,25 +332,32 @@
 					</div>
 					<div class="form-group col-12">
 						<label for="comment">Comment</label>
-						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text" class="form-control"
-							id="comment" aria-describedby="commentHelp" placeholder="Enter comments"></textarea>
+						<textarea style="height: 150px; resize: none;" oninput="verify(event)" type="text"
+							class="form-control" id="comment" aria-describedby="commentHelp"
+							placeholder="Enter comments"></textarea>
 					</div>
 					<div class="col-12" style="text-align: center; margin-top: 20px;">
-						<button type="button" id="submit" class="btn btn-primary" style="min-width: 40%;">Submit</button>
+						<button type="button" id="submit" class="btn btn-primary"
+							style="min-width: 40%;">Submit</button>
 					</div>
 				</div>
 			</div>
 			<div class="container-fluid fp-auto-height">
-				<div class="row" style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px;">
+				<div class="row"
+					style="background-color: #eee; text-align: center;padding-top: 50px; padding-bottom: 50px;">
 					<div class="col-12 col-lg-6">
-						<p  style="color: black">Popular Bread and Food Products<br>
+						<p style="color: black">Popular Bread and Food Products<br>
 							30, Industrial Estate, Kila Maidan<br>
 							Indore, M.P.</p>
-							<p  style="color: black">info@popularbreadindore.com</p>
-						</div>
-						<div class="col-12 col-lg-6">
-						<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
-						<a href="https://www.instagram.com/invites/contact/?i=jkriz7hop27x&utm_content=fo29xym"><img src="./resources/images/instagram.svg" style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+						<p style="color: black">info@popularbreadindore.com</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img
+								src="./resources/images/facebook.svg"
+								style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
+						<a href="https://www.instagram.com/invites/contact/?i=jkriz7hop27x&utm_content=fo29xym"><img
+								src="./resources/images/instagram.svg"
+								style="height: 30px; padding-left: 20px; padding-right: 20px;"></a>
 						<p style="padding-top: 20px; color: black">
 							ISO 9001:2015<br>
 							LIC NO: 11414850001880
@@ -519,260 +379,12 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js" sync></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"
+			sync></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+		<script src="./resources/js/index.js"></script>
 
-		<script>
-			$('.carousel').carousel({
-				interval: 2000
-			})
-
-			new fullpage('#fullpage', {
-				licenseKey: '8MI@?ID!k1',
-				navigation: true,
-				css3: true,
-				anchors: ["aboutus", "csr", "collaborators", "factories", "feedback", "contactus"],
-				scrollingSpeed: 1000,
-				navigation: true,
-				slidesNavigation: true,
-				responsiveHeight: 330,
-				navigationPosition: 'right',
-				showActiveTooltip: true,
-				verticalCentered: true,
-				fitToSection: true,
-				scrollOverflow: true,
-				autoScrolling: true
-			});
-
-			document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', () => {
-				if (document.querySelectorAll('[aria-expanded]')[0].getAttribute('aria-expanded') === 'false') {
-					document.getElementsByTagName('nav')[0].style.backgroundColor = 'white';
-				} else {
-					document.getElementsByTagName('nav')[0].style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
-				}
-			})
-
-			function emailVerify(event) {
-				let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-				if (event.target == undefined) {
-					if (re.test(event)) {
-						return true;
-					} else {
-						return false;
-					}
-				}
-				else {
-					let email = event.target.value;
-					if (re.test(email)) {
-						event.target.style.borderColor = "Green";
-						return true;
-					} else {
-						event.target.style.borderColor = "Red";
-						return false;
-					}
-				}
-			}
-
-			function nameVerify(event) {
-				if (event.target == undefined) {
-					if (event.length > 0) {
-						return true;
-					} else {
-						return false;
-					}
-				}
-				else {
-					let name = event.target.value;
-					if (name.length > 0) {
-						event.target.style.borderColor = "Green";
-						return true;
-					} else {
-						event.target.style.borderColor = "Red";
-						return false;
-					}
-				}
-			}
-
-			function verify(event) {
-				if (event.target == undefined) {
-					if (event.length > 0) {
-						return true;
-					}
-					else {
-						return false;
-					}
-				}
-				else {
-					let message = event.target.value;
-					if (message.length > 0) {
-						event.target.style.borderColor = "Green";
-						return true;
-					} else {
-						event.target.style.borderColor = "Red";
-						return false;
-					}
-				}
-			}
-
-			function phoneVerify(event) {
-				if (event.target == undefined) {
-					if (event.length > 9) {
-						return true;
-					}
-					else {
-						return false;
-					}
-				}
-				else {
-					let message = event.target.value;
-					if (message.length > 9) {
-						event.target.style.borderColor = "Green";
-						return true;
-					} else {
-						event.target.style.borderColor = "Red";
-						return false;
-					}
-				}
-			}
-
-
-			function validateContactUs(obj) {
-				if (nameVerify(obj.name) && phoneVerify(obj.contact_number) && emailVerify(obj.email_id) && verify(obj.description) && verify(obj.address)) {
-					return true;
-				}
-				return false;
-			}
-			function validateFeedback(obj) {
-				if (nameVerify(obj.name) && phoneVerify(obj.contact) && emailVerify(obj.email) && verify(obj.product) && verify(obj.description)) {
-					return true;
-				}
-				return false;
-			}
-
-			window.onload = () => {
-				document.getElementById('submit').addEventListener('click', (e) => {
-					let name = document.getElementById('name').value;
-					let email_id = document.getElementById('email').value;
-					let contact_number = document.getElementById('phone').value;
-					let address = document.getElementById('location').value;
-					let description = document.getElementById('comment').value;
-					let data = { name, contact_number, email_id, description, address }
-					if (validateContactUs(data)) {
-						// fetch call
-						document.getElementById('submit').innerHTML = "Submitting..."
-						fetch('https://popularbreadapi.herokuapp.com/enquiry', {
-							method: "POST",
-							headers: {
-								'Content-Type': 'application/json'
-							},
-							body: JSON.stringify(data)
-						})
-							.then(res => {
-								document.getElementById('name').value = "";
-								document.getElementById('email').value = "";
-								document.getElementById('phone').value = "";
-								document.getElementById('location').value = "";
-								document.getElementById('comment').value = "";
-								document.getElementById('submit').innerHTML = "Submit"
-								return res.json();
-							})
-							.then(data => {
-								if (data.msg === undefined) {
-									document.getElementById('submit').innerHTML = 'Submit'
-									Swal.fire(
-										'Oopppsss..',
-										'There was some technical glitch!',
-										'error'
-									)
-								} else {
-									document.getElementById('submit').innerHTML = 'Submit'
-									Swal.fire(
-										'Submitted',
-										'Successfully submitted the details',
-										'success'
-									)
-								}
-							})
-							.catch(err => {
-								console.log(err)
-								Swal.fire(
-									'Oopppsss..',
-									'There was some internal error!',
-									'error'
-								)
-							})
-					} else {
-						Swal.fire(
-							'Oopppsss..',
-							'Please enter all the fields correctly',
-							'error'
-						)
-					}
-				})
-
-				document.getElementById('submitFB').addEventListener('click', (e) => {
-					let name = document.getElementById('nameFB').value;
-					let email = document.getElementById('emailFB').value;
-					let contact = document.getElementById('phoneFB').value;
-					let product = document.getElementById('productFB').value;
-					let description = document.getElementById('commentFB').value;
-					let data = { name, contact, email, product, description }
-					console.log(data)
-					if (validateFeedback(data)) {
-						document.getElementById('submitFB').innerHTML = "Submitting..."
-						fetch('https://popularbreadapi.herokuapp.com/feedback', {
-							method: "POST",
-							headers: {
-								'Content-Type': 'application/json'
-							},
-							body: JSON.stringify(data)
-						})
-							.then(res => {
-								document.getElementById('submitFB').innerHTML = "Submit"
-								document.getElementById('nameFB').value = "";
-								document.getElementById('emailFB').value = "";
-								document.getElementById('phoneFB').value = "";
-								document.getElementById('productFB').value = "";
-								document.getElementById('commentFB').value = "";
-								return res.json();
-							})
-							.then(data => {
-								if (data.msg === undefined) {
-									document.getElementById('submit').innerHTML = 'Submit'
-									Swal.fire(
-										'Oopppsss..',
-										'There was some technical glitch!',
-										'error'
-									)
-								} else {
-									document.getElementById('submit').innerHTML = 'Submit'
-									Swal.fire(
-										'Submitted',
-										'Successfully submitted the details',
-										'success'
-									)
-								}
-							})
-							.catch(err => {
-								console.log(err)
-								Swal.fire(
-									'Oopppsss..',
-									'There was some internal error!',
-									'error'
-								)
-
-							})
-					} else {
-						Swal.fire(
-							'Oopppsss..',
-							'Please enter all the fields correctly',
-							'error'
-						)
-					}
-				})
-			}
-		</script>
 </body>
 
 </html>

@@ -12,88 +12,9 @@
 
 	<!-- Animation -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./resources/css/productsFull.css">
 
 	<title>Products</title>
-	<style>
-		/* General */
-		* {
-			font-family: 'Open Sans', sans-serif;
-			scroll-behavior: smooth;
-			color: white
-		}
-
-		h1 {
-			font-family: 'Cinzel', serif;
-			font-weight: 1000;
-		}
-
-		.nav-item {
-			padding-left: 15px;
-			padding-right: 15px
-		}
-
-		.ml-auto:last-child {
-			margin-right: 50px;
-		}
-
-		.navbar-light .navbar-toggler {
-			color: black;
-			border: none;
-		}
-
-		.navbar-light .navbar-toggler:focus {
-			outline: none;
-			border: none;
-		}
-
-		/* Pace loader at top */
-
-		.pace {
-			-webkit-pointer-events: none;
-			pointer-events: none;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			user-select: none;
-		}
-
-		.pace-inactive {
-			display: none;
-		}
-
-		.pace .pace-progress {
-			background: #000;
-			position: fixed;
-			z-index: 2000;
-			top: 0;
-			right: 100%;
-			width: 100%;
-			height: 2px;
-		}
-
-		@media only screen and (max-width: 600px) {
-
-			#bread-products,
-			#toast-products,
-			#bakery-products,
-			#pav-products {
-				padding: 30px;
-				padding-top: 50px;
-				padding-bottom: 50px;
-			}
-		}
-
-		@media only screen and (min-width: 600px) {
-
-			#bread-products,
-			#toast-products,
-			#bakery-products,
-			#pav-products {
-				padding: 150px;
-				padding-top: 50px;
-				padding-bottom: 50px;
-			}
-		}
-	</style>
 </head>
 
 <body>
@@ -131,32 +52,6 @@
 		</div>
 	</nav>
 
-	<!-- Button trigger modal -->
-	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: 120px;">
-		Launch demo modal
-	</button> -->
-
-	<!-- Modal -->
-	<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Nutrition Value</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true" style="color: black;">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<div class="container-fluid tab-content" id="pills-tabContent" style="overflow-x: hidden;">
 		<div class="row tab-pane fade show active" style="margin-top: 100px; " id="bread" role="tabpanel"
 			aria-labelledby="pills-bread-tab">
@@ -170,29 +65,31 @@
             
                         <img src="./resources/images/loader.gif" id="loader" style="margin: auto auto; width: 350px;">
                     </div> -->
-										<button style="display: none;" id="launch-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-											Launch demo modal
-										</button>
-										
-										<!-- Modal -->
-										<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header" style="text-align: center;">
-														<h5 class="modal-title" style="color: black" id="exampleModalLongTitle">Nutrition value</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-															<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-														<img src="" id="launch-modal-img" style="width: 100%">
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-													</div>
-												</div>
-											</div>
-										</div>
+		<button style="display: none;" id="launch-modal" type="button" class="btn btn-primary" data-toggle="modal"
+			data-target="#exampleModalLong">
+			Launch demo modal
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header" style="text-align: center;">
+						<h5 class="modal-title" style="color: black" id="exampleModalLongTitle">Nutrition value</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img src="" id="launch-modal-img" style="width: 100%">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<div class="row tab-pane fade" style="margin-top: 100px;" id="pav" role="tabpanel"
@@ -238,7 +135,7 @@
 				<p style="color: black">Popular Bread and Food Products<br>
 					30, Industrial Estate, Kila Maidan<br>
 					Indore, M.P.</p>
-				<p style="color: black">EMAIL HERE</p>
+				<p style="color: black">info@popularbreadindore.com</p>
 			</div>
 			<div class="col-12 col-lg-6">
 				<a href="https://m.facebook.com/PopularBreadAndFoodProducts/"><img src="./resources/images/facebook.svg"
@@ -266,134 +163,10 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
 
-	<script>
+	<script src="./resources/js/productsFull.js"></script>
 
-		fetch("http://popularbreadapi.herokuapp.com/products?tag=bread", {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json;charset=utf-8'
-			}
-		})
-			.then(response => response.json())
-			.then(res => {
-				let content = "";
-				for (let i = 0; i < res.length; i++) {
-
-					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
-                                                <div class="card">
-                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
-                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
-                                                    </div>
-                                                </div>
-			                                </div>`
-				}
-
-				document.getElementById("bread-products").innerHTML = content;
-
-
-
-			})
-
-		// Pav
-
-		fetch("http://popularbreadapi.herokuapp.com/products?tag=pav", {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json;charset=utf-8'
-			}
-		})
-			.then(response => response.json())
-			.then(res => {
-				let content = "";
-				for (let i = 0; i < res.length; i++) {
-
-					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
-                                                <div class="card">
-                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
-                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
-                                                    </div>
-                                                </div>
-			                                </div>`
-				}
-
-				document.getElementById("pav-products").innerHTML = content;
-
-			})
-
-		// Toast
-
-		fetch("http://popularbreadapi.herokuapp.com/products?tag=toast", {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json;charset=utf-8'
-			}
-		})
-			.then(response => response.json())
-			.then(res => {
-				let content = "";
-				for (let i = 0; i < res.length; i++) {
-
-					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
-                                                <div class="card">
-                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px">${res[i].description}</p>
-                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
-                                                    </div>
-                                                </div>
-			                                </div>`
-				}
-
-				document.getElementById("toast-products").innerHTML = content;
-
-			})
-
-		// Bakery
-
-		fetch("http://popularbreadapi.herokuapp.com/products?tag=bakery", {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json;charset=utf-8'
-			}
-		})
-			.then(response => response.json())
-			.then(res => {
-				let content = "";
-				for (let i = 0; i < res.length; i++) {
-
-					content = content + `<div class="col-12 col-lg-4 aos-init aos-animate" data-aos="zoom-in" style="padding: 25px;">
-                                                <div class="card">
-                                                    <img src=${res[i].image} class="card-img-top" alt="breads" style=" width:100%;">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title" style="color: black; font-weight: 1000; min-height: 60px;">${res[i].name}</h5>
-                                                        <p class="card-text" style="color: black; font-size: 17px; min-height:130px;">${res[i].description}</p>
-                                                        <button data-src=${res[i].nvalue} onclick="showModal(event)" class='btn btn-primary'>Nutrition value</button>
-                                                    </div>
-                                                </div>
-			                                </div>`
-				}
-
-				document.getElementById("bakery-products").innerHTML = content;
-
-			})
-
-			function showModal(event){
-				document.getElementById('launch-modal-img').setAttribute('src', event.target.getAttribute('data-src'));
-				document.getElementById('launch-modal').click();
-			}
-</script>
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 
 </body>
 
