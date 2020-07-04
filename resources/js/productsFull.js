@@ -2,7 +2,7 @@ const s = localStorage.getItem("page");
 if(s === 'Breads'){
     document.getElementById("pills-bread-tab").click();
 }
-if(s === 'Pav and Bun'){
+else if(s === 'Pav and Bun'){
     document.getElementById("pills-pav-tab").click();
 }
 else if(s === 'Toast'){
