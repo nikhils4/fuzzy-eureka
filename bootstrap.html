@@ -31,8 +31,16 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#aboutus">About us</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="productsFull.html">Products</a>
+				<li>
+					<div class="dropdown">
+						<a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown" id="prod-dropdown" style="margin-left: 15px;">Products</a>
+						<div class="dropdown-menu">
+							<a href="productsFull.html" class="dropdown-item">Breads</a>
+							<a href="#" class="dropdown-item" id="prod-pav">Pav and Bun</a>
+							<a href="#" class="dropdown-item" id="prod-toast">Toast</a>
+							<a href="#" class="dropdown-item" id="prod-bakery">Other Bakery Items</a>
+						</div>
+					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#csr">CSR</a>
@@ -191,9 +199,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
 
 
 		<div data-anchor="collaborators" class="section" style="background-color: #b04e5d; ">
@@ -387,4 +392,21 @@
 
 </body>
 
+<script>
+	document.getElementById("prod-pav").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Pav and Bun');
+		window.location.href = "productsFull.html";
+	})
+	document.getElementById("prod-toast").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Toast');
+		window.location.href = "productsFull.html";
+	})
+	document.getElementById("prod-bakery").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Other Bakery Items');
+		window.location.href = "productsFull.html";
+	})
+</script>
 </html>
