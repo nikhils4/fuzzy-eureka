@@ -246,7 +246,11 @@ window.onload = () => {
         }
     })
 
-
+    document.getElementById("prod-bread").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Breads');
+		window.location.href = "productsFull.html";
+	})
     document.getElementById("prod-pav").addEventListener('click', (e) => {
 		e.preventDefault();
 		localStorage.setItem('page', 'Pav and Bun');
