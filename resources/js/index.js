@@ -245,4 +245,21 @@ window.onload = () => {
             )
         }
     })
+
+
+    document.getElementById("prod-pav").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Pav and Bun');
+		window.location.href = "productsFull.html";
+	})
+	document.getElementById("prod-toast").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Toast');
+		window.location.href = "productsFull.html";
+	})
+	document.getElementById("prod-bakery").addEventListener('click', (e) => {
+		e.preventDefault();
+		localStorage.setItem('page', 'Other Bakery Items');
+		window.location.href = "productsFull.html";
+	})
 }
