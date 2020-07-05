@@ -1,3 +1,8 @@
+function showModal(event) {
+    document.getElementById('launch-modal-img').setAttribute('src', event.target.getAttribute('data-src'));
+    document.getElementById('launch-modal').click();
+}
+
 const s = localStorage.getItem("page");
 if(s === 'Breads'){
     document.getElementById("pills-bread-tab").click();
@@ -129,10 +134,7 @@ window.onload = () => {
     
         })
     
-    function showModal(event) {
-        document.getElementById('launch-modal-img').setAttribute('src', event.target.getAttribute('data-src'));
-        document.getElementById('launch-modal').click();
-    }
+    
     
 }
 
