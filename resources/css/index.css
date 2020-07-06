@@ -132,7 +132,7 @@ label::after {
 
 html {
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 ::-webkit-scrollbar {
