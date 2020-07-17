@@ -9,7 +9,6 @@ new fullpage('#fullpage', {
     anchors: ["aboutus", '', "csr", "collaborators", "factories", "feedback", "contactus"],
     scrollingSpeed: 1000,
     navigation: true,
-    slidesNavigation: true,
     responsiveHeight: 330,
     navigationPosition: 'right',
     showActiveTooltip: true,
