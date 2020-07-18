@@ -18,7 +18,7 @@ else if(s === 'Other Bakery Items'){
 }
 
 window.onload = () => {
-    fetch("http://popularbreadapi.herokuapp.com/products?tag=bread", {
+    fetch("https://popularbreadapi.herokuapp.com/products?tag=bread", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
@@ -49,7 +49,7 @@ window.onload = () => {
     
     // Pav
     
-    fetch("http://popularbreadapi.herokuapp.com/products?tag=pav", {
+    fetch("https://popularbreadapi.herokuapp.com/products?tag=pav", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
@@ -78,7 +78,7 @@ window.onload = () => {
     
     // Toast
     
-    fetch("http://popularbreadapi.herokuapp.com/products?tag=toast", {
+    fetch("https://popularbreadapi.herokuapp.com/products?tag=toast", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
@@ -107,7 +107,7 @@ window.onload = () => {
     
     // Bakery
     
-    fetch("http://popularbreadapi.herokuapp.com/products?tag=bakery", {
+    fetch("https://popularbreadapi.herokuapp.com/products?tag=bakery", {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
