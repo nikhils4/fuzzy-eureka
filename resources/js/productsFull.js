@@ -17,6 +17,13 @@ else if(s === 'Other Bakery Items'){
     document.getElementById("pills-bakery-tab").click();
 }
 
+let arr = document.getElementsByClassName('close-nav')
+for(let i = 0; i < arr.length; i++){
+    arr[i].addEventListener('click', () => {
+        document.getElementById('close-nav-btn').click();
+    })
+}
+
 window.onload = () => {
     fetch("https://popularbreadapi.herokuapp.com/products?tag=bread", {
         method: 'GET',
